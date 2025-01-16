@@ -98,30 +98,4 @@ public class RidesDAOImpl implements RidesDAO {
 		i = prst.executeUpdate();
 		return i > 0;
 	}
-
-//	@Override
-//	public TreeMap<Rides, Driver> displayRideDetail(int id) {
-//		query="select r.rides_id, d.name,d.vechicle_type,d.vechicle_no from rides r join"
-//		return null;
-//	}
-
-//	@Override
-//	public TreeMap<Rides, com.mysql.cj.jdbc.Driver> displayRideDetail(int id) {
-//		// TODO Auto-generated method stub
-//		return null;
-//	}
-
-//	public PriorityQueue<Driver> availableDriver() throws SQLException {
-//		PriorityQueue<Driver> driver = new PriorityQueue<>((d1, d2) -> d1.getLocation().compareTo(d2.getLocation()));
-//		query = "select * from driver where is_available='true' order by location";
-//		Driver d = null;
-//		prst = StatementProvider.getStatement(query);
-//		rs = prst.executeQuery();
-//		while (rs.next()) {
-//			d = new Driver(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getLong(4), rs.getString(5),
-//					rs.getString(6), rs.getDouble(7), rs.getString(8));
-//			driver.add(d);
-//		}
-//		return driver;
-//	}
 }
